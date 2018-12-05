@@ -13,7 +13,7 @@ java_library(
 
 java_binary(
     name = "Main",
-    srcs = ["Main.java"],
+    srcs = glob(["*.java"]),
     main_class = "src.Main",
     deps = [
         ":undertow",
